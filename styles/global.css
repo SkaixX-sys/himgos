@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Ysabeau Infant;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Ysabeau Infant;
+    src: url("https://fonts.google.com/specimen/Ysabeau+Infant");
+}
+
+body {
+    background-color: #E3E4E5;
+}
+
+.gradient_border {
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-image: linear-gradient(to bottom, rgba(255, 255, 255, .5) 0%, rgba(255, 255, 255, 0) 100%) 1 1 stretch;
+}
+
+.header {
+    background-image: url('../static/main_img/main_background_image.png');
+}
+
+.footer {
+    background: #d6d6d6;
+}
+
+.swiper-prev {
+    background-image: url("../static/icons/prevbutton.png");
+}
+
+.swiper-next {
+    background-image: url("../static/icons/nextbutton.png");
+}
+
+.hidden {
+    transform: scale(80%);
+}
+
+.burger__open {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.feedback__open {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    left: 0;
+    top: 0;
+
+}
+
+.document__open {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    left: 0;
+    top: 0;
+}

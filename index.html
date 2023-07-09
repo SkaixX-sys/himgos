@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>himgos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <nav
+      class="nav w-full bg-black bg-opacity-90 fixed flex justify-between items-center text-white px-3 py-3 z-20 2xl:px-10"
+    >
+      <a
+        href="#main"
+        class="nav__logo w-1/12 sm:text-2xl sm:w-1/3 cursor-pointer"
+      >
+        HIMGOS
+      </a>
+      <div
+        class="nav__menu hidden sm:flex justify-between items-center w-1/3 2xl:w-1/4 lg:text-2xl"
+      >
+        <a
+          href="#main"
+          class="nav__item hover:scale-110 underline-offset-2 hover:underline-offset-8 hover:underline ease-out duration-300 p-3"
+          >Главная</a
+        >
+        <a
+          href="#products"
+          class="nav__item hover:scale-110 underline-offset-2 hover:underline-offset-8 hover:underline ease-out duration-300 p-3"
+          >Товары</a
+        >
+        <a
+          href="#about"
+          class="nav__item hover:scale-110 underline-offset-2 hover:underline-offset-8 hover:underline ease-out duration-300 p-3"
+          >О нас</a
+        >
+      </div>
+      <div
+        class="nav__phone text-sm sm:text-xl w-full text-center sm:w-1/3 sm:text-right"
+      >
+        +7 (951) 916-34-94
+      </div>
+      <div
+        class="nav__burger__button flex justify-end items-center w-1/12 sm:hidden"
+      >
+        <div class="flex justify-between flex-col">
+          <span class="burger__span border-white w-7 h-px bg-white"></span>
+          <span class="border-white my-2 w-7 h-px bg-white"></span>
+          <span class="border-white w-7 h-px bg-white"></span>
+        </div>
+      </div>
+    </nav>
+    <header
+      class="header h-screen text-center flex justify-center items-center flex-col text-white bg-no-repeat bg-cover bg-center w-full"
+      id="main"
+    >
+      <div class="text-3xl sm:text-5xl">Делаем химию<br />для любых нужд</div>
+      <div class="opacity-60 mt-2 sm:text-xl 2xl:mt-4">
+        растворители, моющие средства и автомобильную химию
+      </div>
+      <div
+        class="feedback__button py-3 px-5 border mt-4 2xl:mt-8 bg-white bg-opacity-10 gradient_border sm:text-2xl cursor-pointer hover:bg-black hover:text-white ease-in duration-150"
+      >
+        Получить консультацию
+      </div>
+    </header>
+    <main class="main">
+      <div class="products" id="products">
+        <h2
+          class="products__title text-center text-3xl my-6 font-bold sm:text-5xl"
+        >
+          Товары
+        </h2>
+        <div
+          class="products__wrapper flex justify-center items-center flex-col"
+        >
+          <div
+            class="product__item mb-4 bg-white p-3 rounded w-11/12 lg:p-0 lg:flex lg:justify-between"
+          >
+            <div class="lg:p-4 lg:w-1/2 lg:flex lg:justify-between lg:flex-col">
+              <div class="">
+                <div class="text-2xl font-semibold mb-2 sm:text-3xl">
+                  Олифа нефтеполимерная
+                </div>
+                <div class="p-1 sm:text-2xl">
+                  Используется в машиностроении, авиации, судостроении,
+                  производстве электрооборудования, также в качестве смазки для
+                  крупных механизмов, таких как шестеренчатые насосы, редукторы,
+                  подшипники, цепи.
+                </div>
+              </div>
+              <div class="flex justify-between items-end my-2 sm:text-2xl">
+                <div class="lg:p-3">От 40руб/л</div>
+                <div
+                  class="cursor-pointer underline-offset-4 underline font-medium feedback__button hover:underline-offset-8 ease-out duration-300 lg:p-3"
+                >
+                  Получить консультацию
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/2 flex justify-center items-center">
+              <img
+                src="/static/products_img/olifa.png"
+                alt=""
+                class="lg:bg-cover lg:bg-no-repeat lg:bg-center"
+              />
+            </div>
+          </div>
+          <div
+            class="product__item mb-4 bg-white p-3 rounded w-11/12 lg:p-0 lg:flex lg:justify-between"
+          >
+            <div class="lg:p-4 lg:w-1/2 lg:flex lg:justify-between lg:flex-col">
+              <div>
+                <div class="text-2xl font-semibold mb-2 sm:text-3xl">
+                  Уайт-спирит Нефрас С4
+                </div>
+                <div class="p-1 sm:text-2xl">
+                  Растворитель, который используется в производстве красок и
+                  лаков, чистки металлических поверхностей, производства
+                  пластмасс, удаление клея или в домашних нуждах.
+                </div>
+              </div>
+              <div class="flex justify-between items-center my-2 sm:text-2xl">
+                <div class="lg:p-3">От 40руб/л</div>
+                <div
+                  class="cursor-pointer underline-offset-4 underline font-medium feedback__button hover:underline-offset-8 ease-out duration-300 lg:p-3"
+                >
+                  Получить консультацию
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/2 flex justify-center items-center">
+              <img
+                src="/static/products_img/nefrasc4.png"
+                alt=""
+                class="lg:bg-cover lg:bg-no-repeat lg:bg-center"
+              />
+            </div>
+          </div>
+          <div
+            class="product__item mb-4 bg-white p-3 rounded w-11/12 lg:p-0 lg:flex lg:justify-between"
+          >
+            <div class="lg:p-4 lg:w-1/2 lg:flex lg:justify-between lg:flex-col">
+              <div>
+                <div class="text-2xl font-semibold mb-2 sm:text-3xl">
+                  Нефрас-БР-С2
+                </div>
+                <div class="p-1 sm:text-2xl">
+                  Используется преимущественно в строительной отрасли для
+                  улучшения качества битумных материалов и покрытий.
+                </div>
+              </div>
+              <div class="flex justify-between items-center my-2 sm:text-2xl">
+                <div class="lg:p-3">От 40руб/л</div>
+                <div
+                  class="cursor-pointer underline-offset-4 underline font-medium feedback__button hover:underline-offset-8 ease-out duration-300 lg:p-3"
+                >
+                  Получить консультацию
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/2 flex justify-center items-center">
+              <img
+                src="/static/products_img/nefrasc2.png"
+                alt=""
+                class="lg:bg-cover lg:bg-no-repeat lg:bg-center"
+              />
+            </div>
+          </div>
+          <div
+            class="product__item mb-4 bg-white p-3 rounded w-11/12 lg:p-0 lg:flex lg:justify-between"
+          >
+            <div class="lg:p-4 lg:w-1/2 lg:flex lg:justify-between lg:flex-col">
+              <div>
+                <div class="text-2xl font-semibold mb-2 sm:text-3xl">
+                  Нефрас-С-5
+                </div>
+                <div class="p-1 sm:text-2xl">
+                  Применяется в гидравлических системах технических устройств,
+                  включая металлообрабатывающее оборудование, пресс-формы,
+                  машинно-строительное оборудование, гидравлические
+                  манипуляторы.
+                </div>
+              </div>
+              <div class="flex justify-between items-center my-2 sm:text-2xl">
+                <div class="lg:p-3">От 40руб/л</div>
+                <div
+                  class="cursor-pointer underline-offset-4 underline font-medium feedback__button hover:underline-offset-8 ease-out duration-300 lg:p-3"
+                >
+                  Получить консультацию
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/2 flex justify-center items-center">
+              <img
+                src="/static/products_img/nefrasc5.png"
+                alt=""
+                class="lg:bg-cover lg:bg-no-repeat lg:bg-center"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="advantages bg-white p-3 rounded w-11/12 mx-auto mt-8" id="about">
+        <h2 class="text-center text-3xl my-6 font-bold sm:text-5xl">
+          Наши преимущества
+        </h2>
+        <div class="grid grid-cols-2 gap-2">
+          <div
+            class="bg-white p-4 shadow-md flex justify-between flex-col md:w-1/2 md:mx-auto"
+          >
+            <img
+              src="./static/icons/barrel.png"
+              alt="Image 1"
+              class="w-auto h-1/2 mb-4 lg:h-3/4 self-center"
+            />
+            <div>
+              <h3 class="text-lg font-medium sm:text-xl">ПОСТАВКА</h3>
+              <p class="text-gray-500 sm:text-lg">бочками по 212л</p>
+            </div>
+          </div>
+          <div
+            class="bg-white p-4 shadow-md flex justify-between flex-col md:w-1/2 md:mx-auto"
+          >
+            <img
+              src="./static/icons/dollar.png"
+              alt="Image 2"
+              class="w-auto h-1/2 mb-4 lg:h-3/4 self-center"
+            />
+            <div>
+              <h3 class="text-lg font-medium sm:text-xl">ЗАКУПКА</h3>
+              <p class="text-gray-500 sm:text-lg">
+                растворителей по выгодным ценам
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-white p-4 shadow-md flex justify-between flex-col md:w-1/2 md:mx-auto"
+          >
+            <img
+              src="./static/icons/raindrop.png"
+              alt="Image 3"
+              class="w-auto h-1/2 mb-4 lg:h-3/4 self-center"
+            />
+            <div>
+              <h3 class="text-lg font-medium sm:text-xl">РАЗЛИТИЕ</h3>
+              <p class="text-gray-500 sm:text-lg">под Вашим брендом</p>
+            </div>
+          </div>
+          <div
+            class="bg-white p-4 shadow-md flex justify-between flex-col md:w-1/2 md:mx-auto"
+          >
+            <img
+              src="./static/icons/truck.png"
+              alt="Image 4"
+              class="w-auto h-1/2 mb-4 lg:h-3/4 self-center"
+            />
+            <div>
+              <h3 class="text-lg font-medium sm:text-xl">ДОСТАВКА</h3>
+              <p class="text-gray-500 sm:text-lg">
+                собственным транпортом или ж/д
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="documents__slider relative bg-white p-3 rounded w-11/12 mx-auto mt-8 flex items-center justify-center flex-col"
+      >
+        <h2 class="text-center text-3xl my-6 font-bold sm:text-5xl">
+          Документы
+        </h2>
+        <div class="swiper-container w-1/2 h-1/2 overflow-hidden">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide relative">
+              <img
+                src="./static/icons/zoom-in.png"
+                class="cursor-pointer zoom_in absolute right-2 bottom-2 w-8 h-8 bg-white shadow-md p-1 sm:w-14 sm:h-14 hover:shadow-xl ease-in duration-150 hover:border"
+                alt=""
+              />
+              <img
+                src="./static/sertificates/87b19a67-5a92-409d-b1b0-c48b6ea4c0ef.jpg"
+                alt=""
+                class="slide__image bg-cover flex justify-center items-center bg-center text-center border w-full"
+              />
+            </div>
+            <div class="swiper-slide relative">
+              <img
+                src="./static/icons/zoom-in.png"
+                class="cursor-pointer zoom_in absolute right-2 bottom-2 w-8 h-8 bg-white shadow-md p-1 sm:w-14 sm:h-14 hover:shadow-xl ease-in duration-150 hover:border"
+                alt=""
+              />
+              <img
+                src="./static/sertificates/ac06e9d0-c504-43ab-8bc4-1ce90058036c.jpg"
+                alt=""
+                class="slide__image bg-cover flex justify-center items-center bg-center text-center border w-full"
+              />
+            </div>
+            <div class="swiper-slide relative">
+              <img
+                src="./static/icons/zoom-in.png"
+                class="cursor-pointer zoom_in absolute right-2 bottom-2 w-8 h-8 bg-white shadow-md p-1 sm:w-14 sm:h-14 hover:shadow-xl ease-in duration-150 hover:border"
+                alt=""
+              />
+              <img
+                src="./static/sertificates/aee23e37-cd04-4545-8270-c1a14e3797c5.jpg"
+                alt=""
+                class="slide__image bg-cover flex justify-center items-center bg-center text-center border w-full"
+              />
+            </div>
+            <div class="swiper-slide relative">
+              <img
+                src="./static/icons/zoom-in.png"
+                class="cursor-pointer zoom_in absolute right-2 bottom-2 w-8 h-8 bg-white shadow-md p-1 sm:w-14 sm:h-14 hover:shadow-xl ease-in duration-150 hover:border"
+                alt=""
+              />
+              <img
+                src="./static/sertificates/d9e75c7c-b4f9-470c-a888-ba7850c8d3a5.jpg"
+                alt=""
+                class="slide__image bg-cover flex justify-center items-center bg-center text-center border w-full"
+              />
+            </div>
+          </div>
+          <div
+            class="swiper-prev absolute top-1/2 w-4 h-10 -mt-5 z-10 cursor-pointer bg-no-repeat bg-center left-1/4 hover:scale-110 ease-in-out duration-150 lg:p-5"
+          ></div>
+          <div
+            class="swiper-next absolute top-1/2 w-4 h-10 -mt-5 z-10 cursor-pointer bg-no-repeat bg-center right-1/4 hover:scale-110 ease-in-out duration-150 lg:p-5"
+          ></div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="flex justify-center items-center flex-col text-xs bg-gray-100 py-8 mt-4"
+    >
+      <div
+        class="flex justify-center items-start flex-col md:flex-row mx-4 md:mx-auto max-w-6xl"
+      >
+        <ul class="mb-4 md:mb-0 md:mr-12 sm:text-sm md:text-lg">
+          <li class="font-medium mb-2">Телефон:</li>
+          <li class="text-gray-600">8 (951) 916-34-94</li>
+          <li class="text-gray-600">+7 (950) 359-98-00</li>
+        </ul>
+        <ul class="mb-4 md:mb-0 md:mr-12 sm:text-sm md:text-lg">
+          <li class="font-medium mb-2">E-mail:</li>
+          <li class="text-gray-600">1@promhim-t.ru</li>
+          <li class="text-gray-600">admin@promhim-t.ru</li>
+        </ul>
+        <ul class="sm:text-sm md:text-lg">
+          <li class="font-medium mb-2">Адрес:</li>
+          <li class="text-gray-600">Нижегородская обл., г. Дзержинск,</li>
+          <li class="text-gray-600">ул. Красноармейская, 17А</li>
+        </ul>
+      </div>
+      <div class="text-center mt-8">
+        &copy; 2023 ООО «ПромХимТех» Все права защищены
+      </div>
+    </footer>
+
+    <!-- Burger content -->
+    <div
+      class="burger__wrapper hidden justify-center items-center text-white text-center z-50"
+    >
+      <div
+        class="close__burger absolute right-4 top-2 hidden text-3xl sm:text-4xl sm:right-6 sm:top-4 cursor-pointer"
+      >
+        &times;
+      </div>
+      <div class="flex flex-col justify-around items-center h-3/4">
+        <a
+          class="border-b pb-5 pt-10 w-11/12 text-2xl sm:text-4xl cursor-pointer"
+          href="#main"
+        >
+          Главная
+        </a>
+        <a
+          class="border-b pb-5 pt-10 w-11/12 text-2xl sm:text-4xl cursor-pointer"
+          href="#products"
+        >
+          Товары
+        </a>
+        <a
+          class="border-b pb-5 pt-10 w-11/12 text-2xl sm:text-4xl cursor-pointer"
+          href="#about"
+        >
+          О нас
+        </a>
+      </div>
+    </div>
+
+    <!-- feedback modal -->
+    <div
+      class="feedback__wrapper hidden justify-center items-center text-white z-50"
+    >
+      <form
+        class="feedback__form bg-white rounded px-8 pt-6 pb-8 mb-4 relative sm:px-10 sm:pt-8 sm:pb-10 sm:mb-4"
+      >
+        <div class="mb-4">
+          <label
+            class="block text-gray-700 font-bold mb-2 sm:text-xl"
+            for="full_name"
+          >
+            Полное имя
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="full_name"
+            type="text"
+            placeholder="Введите полное имя"
+            required
+            pattern="[A-Za-zА-Яа-яЁё\s]+"
+            title="Пожалуйста, используйте только буквы и пробелы"
+          />
+        </div>
+        <div class="mb-4">
+          <label
+            class="block text-gray-700 font-bold mb-2 sm:text-xl"
+            for="phone_number"
+          >
+            Номер телефона
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="phone_number"
+            type="tel"
+            placeholder="Введите номер"
+            required
+            pattern="(8|\+7)[\- ]?\(?\d{3}\)?[\- ]?\d{3}[\- ]?\d{2}[\- ]?\d{2}"
+            inputmode="tel"
+          />
+        </div>
+        <div class="flex items-center justify-between">
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full sm:text-xl"
+            type="submit"
+          >
+            Отправить
+          </button>
+        </div>
+        <div
+          class="close__feedback__modal absolute right-2 top-1 text-black text-xl cursor-pointer"
+        >
+          &times;
+        </div>
+      </form>
+    </div>
+
+    <!-- document image modal -->
+
+    <div class="document__modal z-50 hidden">
+      <div class="document__modal__content sm:p-6"></div>
+    </div>
+
+    <script src="./scripts/burger.js"></script>
+    <script src="./scripts/feedbackModal.js"></script>
+    <script src="./scripts/documentsModal.js"></script>
+    <script type="module" src="./scripts/postToGoogleForm.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const mySwiper = new Swiper(".swiper-container", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+        },
+        navigation: {
+          nextEl: ".swiper-next",
+          prevEl: ".swiper-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
