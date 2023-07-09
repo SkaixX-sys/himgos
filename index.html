@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>himgos</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
+    
+    
     <script type="module" crossorigin src="./assets/index-4e74e71b.js"></script>
-    <link rel="stylesheet" href="./assets/index-cf90a62f.css" />
+    <link rel="stylesheet" href="./assets/index-cf90a62f.css">
   </head>
   <body>
     <nav
@@ -458,19 +459,11 @@
       <div class="document__modal__content sm:p-6"></div>
     </div>
 
-    <script>
-      const mySwiper = new Swiper(".swiper-container", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        autoplay: {
-          delay: 5000,
-        },
-        navigation: {
-          nextEl: ".swiper-next",
-          prevEl: ".swiper-prev",
-        },
-      });
-    </script>
+    <script src="./scripts/burger.js"></script>
+    <script src="./scripts/feedbackModal.js"></script>
+    <script src="./scripts/documentsModal.js"></script>
+    
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripts/swiperInit.js"></script>
   </body>
 </html>
